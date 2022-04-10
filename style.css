@@ -105,8 +105,6 @@ button[aria-label="help"]:active {
     height: 440px;
     margin: 10px;
     margin-top: 15px;
-    border: 1px solid #bbb;
-    border-width: 0px 0px 0px 1px;
 }
 
 .left-margin,
@@ -137,7 +135,10 @@ button[aria-label="Indentation"] {
     border-top-left-radius: 3px;
     font-family: "Segoe UI";
     font-weight: normal;
+    z-index: 2;
     font-size: 12px;
+    border-left:1px solid rgb(145, 167, 180);
+    border-right:3px solid rgb(145, 167, 180);
 }
 
 button[aria-label="Line Page"] {
@@ -146,23 +147,25 @@ button[aria-label="Line Page"] {
             rgba(250, 250, 249, 1) 26%,
             rgba(240, 240, 234, 1) 95%,
             rgba(236, 235, 229, 1) 100%);
-    border-left: 0px;
-    border-bottom: 1px solid transparent;
+    border: 1px solid rgb(145, 167, 180);
+    border-left:0px;
+    border-bottom: 1px solid rgb(145, 167, 180);
     box-shadow: none;
     margin-right: -1px;
-    border-color: #91a7b4;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     font-family: "Segoe UI";
     font-weight: normal;
     font-size: 11px;
+    z-index: 0;
 }
 
 .field {
     background: linear-gradient(to bottom, #fff, #fcfcfb);
-    border: 1px solid #bbb;
+    border: 1px solid rgb(145, 167, 180);
     padding: 4px;
     padding-right: 0px;
+    z-index: 1;
 }
 
 .special-option,
@@ -260,7 +263,7 @@ button[aria-label="Line Page"] {
     content: "";
     width: 357px;
     border-style: inset;
-    border-width: 1px;
+    border-width: 0.2px;
     margin: auto;
     margin-left: 5px;
 }
@@ -392,16 +395,17 @@ button[aria-label="Line Page"] {
 .tabs {
     float: left;
 }
-.ok:active,
-.active {
-    box-shadow: inset -1px 1px #f7e1b2, inset 1px 2px #a7aeec, inset -1px 2px #a8b6d4, inset 2px -1px #aac7e2;
-
-}
+.ok:active {
+    box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
+            inset 2px -2px #89ade4;}
+.active{
+    box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
+    inset 2px -2px #89ade4;}
 .ok:hover,
 .cancel:hover,
 .tabs:hover {
-    box-shadow: inset -1px 1px #f7e1b2, inset 1px 1px #a7aeec, inset -1px 2px #a8b6d4, inset 1px -2px #aac7e2;
-
+    box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
+            inset 2px -2px #89ade4;
 }
 #color {
     color: black;
