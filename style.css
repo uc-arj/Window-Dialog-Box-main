@@ -14,10 +14,13 @@ Line Update    :81,83
     font-family: "Pixelated MS Sans Serif";
 }
 
+.flex {
+    display: flex;
+}
+
 body {
     height: 100vh;
     background: #CCCCCC;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -54,7 +57,6 @@ body {
     margin: 2px;
     height: 30px;
     float: right;
-    display: flex;
     justify-content: end;
 }
 
@@ -73,19 +75,24 @@ li {
     list-style: none;
 }
 
+.mr2 {
+    margin-right: 2px;
+}
+
+.mt3 {
+    margin-top: 3px;
+}
+
 button[aria-label="Close"] {
     background-image: url("download.svg");
-    margin-right: 2px;
 }
 
 button[aria-label="Close"]:hover {
     background-image: url("close-hover.svg");
-    margin-right: 2px;
 }
 
 button[aria-label="Close"]:active {
     background-image: url("close-active.svg");
-    margin-right: 2px;
 }
 
 button[aria-label="help"] {
@@ -119,7 +126,6 @@ button[aria-label="help"]:active {
 
 ul {
     margin: 0 0 -2px;
-    display: flex;
     padding-left: 0px;
 
 }
@@ -137,8 +143,8 @@ button[aria-label="Indentation"] {
     font-weight: normal;
     z-index: 2;
     font-size: 12px;
-    border-left:1px solid rgb(145, 167, 180);
-    border-right:3px solid rgb(145, 167, 180);
+    border-left: 1px solid rgb(145, 167, 180);
+    border-right: 3px solid rgb(145, 167, 180);
 }
 
 button[aria-label="Line Page"] {
@@ -148,7 +154,7 @@ button[aria-label="Line Page"] {
             rgba(240, 240, 234, 1) 95%,
             rgba(236, 235, 229, 1) 100%);
     border: 1px solid rgb(145, 167, 180);
-    border-left:0px;
+    border-left: 0px;
     border-bottom: 1px solid rgb(145, 167, 180);
     box-shadow: none;
     margin-right: -1px;
@@ -179,6 +185,7 @@ button[aria-label="Line Page"] {
     background-repeat: no-repeat;
     background-position: top 0px right 0px;
 }
+
 .floatleft {
     float: left;
 }
@@ -229,7 +236,8 @@ button[aria-label="Line Page"] {
 .w100 {
     width: 100px;
 }
-.h20{
+
+.h20 {
     height: 20px;
 }
 
@@ -301,8 +309,8 @@ button[aria-label="Line Page"] {
 .special {
     margin-left: 12px;
 }
+
 .special-option {
-    margin-top: 3px;
     margin-bottom: 3px;
 }
 
@@ -313,7 +321,6 @@ button[aria-label="Line Page"] {
 .by-option,
 .at-option {
     padding: 1px 0px 1px 0px;
-    margin-top: 3px;
 }
 
 .before,
@@ -335,7 +342,6 @@ button[aria-label="Line Page"] {
 }
 
 .line-option {
-    margin-top: 3px;
     margin-bottom: 2px;
 }
 
@@ -371,18 +377,21 @@ button[aria-label="Line Page"] {
     color: lightgray;
     margin-bottom: 20px;
 }
+
 .blank {
     width: 380px;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.253);
     margin: 20px 0px 10px 20px;
 }
+
 .para {
     padding: 1px 9px 1px 20px;
     font-size: 9px;
     color: rgb(211, 211, 211);
     font-family: "Pixelated MS Sans Serif", Arial;
 }
+
 .ok,
 .cancel,
 .tabs {
@@ -392,21 +401,19 @@ button[aria-label="Line Page"] {
     border: 1px solid #063057;
     border-radius: 3px;
 }
+
 .tabs {
     float: left;
 }
-.ok:active {
-    box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
-            inset 2px -2px #89ade4;}
-.active{
-    box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
-    inset 2px -2px #89ade4;}
+
 .ok:hover,
 .cancel:hover,
-.tabs:hover {
+.tabs:hover,
+.active {
     box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
-            inset 2px -2px #89ade4;
+        inset 2px -2px #89ade4;
 }
+
 #color {
     color: black;
 }

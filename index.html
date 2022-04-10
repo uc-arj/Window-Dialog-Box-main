@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="flex">
     <div class="window">
         <div class="header">
             <div class="title floatleft w100">Paragraph</div>
-            <div class="control w100">
+            <div class="control w100 flex">
                 <button accesskey="h" aria-label="help"></button>
-                <button accesskey="x" aria-label="Close"></button>
+                <button accesskey="x" aria-label="Close" class="mr2"></button>
             </div>
         </div>
         <div class="container">
-            <ul class="list" aria-label="Button list">
+            <ul class="list flex" aria-label="Button list">
                 <li>
                     <button aria-label="Indentation"><u>I</u>ndent
                         and Spacing </button>
@@ -68,7 +68,7 @@
                     <div class="special">
                         <label for="special"><u>S</u>pecial:</label><br>
                         <select accesskey="s" name="special" id="special"
-                            class="special-option pageshift floatleft paddingopt w100 h20">
+                            class="special-option pageshift floatleft paddingopt w100 h20 mt3">
                             <option value="custom">Custom</option>
                             <option value="autoright">Auto right</option>
                             <option value="autoleft">Auto left</option>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="By">
                         <label for="By">B<u>y</u>:</label>
-                        <select accesskey="y" name="By" id="By" class="by-option pageshift w80 h20">
+                        <select accesskey="y" name="By" id="By" class="by-option pageshift w80 h20 mt3">
                             <option value="bodytext">Custom</option>
                             <option value="fromleft">Left</option>
                             <option value="Fromright">Right</option>
@@ -97,14 +97,14 @@
                         <div class="after pageshift floatleft">
                             <label for="After">Aft<u>e</u>r:</label>
                             <input accesskey="e" aria-label="After level" type="number" min="0" max="5" id="After"
-                                class="after-margin floatleft w80" value="1" />
+                                class="after-margin floatleft w80 mt3" value="1" />
                         </div>
                     </div>
                     <div class="right-box pageshift">
                         <div class="line-spacing floatleft">
                             <label for="line-spacing">Li<u>n</u>e Spacing:</label><br>
                             <select accesskey="n" name="line-spacing" id="line-spacing"
-                                class="line-option pageshift floatleft paddingopt w100 h20 ">
+                                class="line-option pageshift floatleft paddingopt w100 h20 mt3">
                                 <option value="Single">Single</option>
                                 <option value="autoright">Auto right</option>
                                 <option value="autoleft">Auto left</option>
